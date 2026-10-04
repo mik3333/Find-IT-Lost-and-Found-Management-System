@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FIND IT — Lost and Found</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Outfit:wght@360;420;520;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="topbar">
+        <div class="topbar-nav">
+          <button class="nav-toggle" id="nav-toggle" type="button" aria-label="Menu">Menu</button>
+          <nav class="nav" id="nav">
+            <a href="#/" class="nav-link nav-link--primary">Home</a>
+            <a href="#/faqs" class="nav-link">What's new</a>
+            <a href="#/post" class="nav-link" data-auth>Post a thread</a>
+            <a href="#/admin/overview" class="nav-link" data-admin>Admin</a>
+          </nav>
+        </div>
+
+        <div class="account-actions" data-auth>
+          <a href="#/profile" class="nav-link profile-nav-link">
+            <img class="nav-avatar" id="nav-avatar" alt="" />
+            <span>View profile</span>
+          </a>
+          <button type="button" id="logout-btn" class="session-button session-button--secondary nav-button">Log out</button>
+        </div>
+
+        <div class="session-actions">
+          <a href="#/login" class="session-button session-button--secondary" data-guest>Log in</a>
+          <a href="#/register" class="session-button session-button--primary" data-guest>Register</a>
+        </div>
+      </header>
+
+      <main id="app"></main>
+      <footer class="footer">
+        <p>FIND IT Lost and Found Management System · Localhost academic project</p>
+      </footer>
+    </div>
+    <script src="/js/app.js"></script>
+  </body>
+</html>
